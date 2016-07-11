@@ -1,0 +1,29 @@
+{
+  "name": "molekule",
+  "version": "1.0.0",
+  "description": "A mock up site for practice purposes",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "normalize.css": "^4.2.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.13.0"
+  },
+  "scripts": {
+    "test": "echo (\"hello world\")"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/embrah/molekule.git"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "Emil Mladenov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/embrah/molekule/issues"
+  },
+  "homepage": "https://github.com/embrah/molekule#readme"
+}
