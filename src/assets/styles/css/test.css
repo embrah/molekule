@@ -32,3 +32,11 @@ body {
 
 h1, h2, h3 {
   font-family: "Libre Baskerville"; }
+
+.container {
+  display: flex;
+  flex-flow: column wrap; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
