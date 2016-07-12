@@ -2,9 +2,25 @@ doctype html
 html
   head
     meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width")
     title Document
     link(rel="stylesheet", href="assets/styles/css/normalize.css")
-    link(rel="stylesheet", href="assets/styles/css/test.css")
+    link(rel="stylesheet", href="assets/styles/css/home.css")
   body
-   
-  
+    header
+      input(type="checkbox")#toggle
+      nav
+        .main-menu
+          a(href="#").home MOLEKULE
+          ul
+            li
+              a(href="#") Technology
+            li
+              a(href="#") Product
+            li
+              a(href="#") About
+            li
+              a(href="#") FAQ
+        .wait-list
+          p first batch sold out
+          button.btn-default join wait list
