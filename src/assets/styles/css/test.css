@@ -35,8 +35,8 @@ h1, h2, h3 {
 
 .container {
   display: flex;
-  flex-flow: column wrap; }
+  flex-flow: row wrap; }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto; }

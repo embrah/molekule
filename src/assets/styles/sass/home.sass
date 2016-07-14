@@ -3,3 +3,143 @@
 @import 'typography'
 @import 'tools'
 @import 'page-elements'
+
+h1,h2,h3
+	margin: 0
+
+header
+	height: 55px
+	@media all and (max-width:790px)
+
+.main
+	//position: absolute
+	top: 50px
+	width: 100%
+	@media all and(max-width: 790px)
+		background: url(../../images/forest.jpg) no-repeat top center / cover
+		padding: 200px 0
+		top: 40px
+
+	video
+		width: 100%
+		height: auto
+		@media all and (max-width:790px)
+			display: none
+
+.molekule-intro
+	padding: 50px 15px
+	background: $grey-200
+	@extend %flex-row
+	flex-flow: row nowrap
+	justify-content: space-between
+	align-items: center
+
+	@media all and (max-width:830px)
+		flex-flow: column wrap
+
+	.meet-molekule
+		flex: 0 1 30%
+
+	.pic
+		flex: 1 1 70%
+		@extend %flex-row
+		justify-content: flex-end
+
+.clean-air
+	padding: 250px 20px
+	background: url(../../images/girl-3840.jpg) no-repeat top center / cover
+	@extend %flex-col
+	align-items: flex-start
+	justify-content: flex-start
+
+	p
+		max-width: 50rem
+	
+	h1
+			max-width: 80rem
+
+	.air-statistics
+		@extend %flex-row
+		padding: 20px 
+
+		.row
+			@extend %flex-col
+			align-items: center
+			color: #fff
+
+			p
+				max-width: 18rem
+
+
+.air-contents
+	
+	@extend %flex-row
+	flex-wrap: nowrap
+	align-items: center
+	background: lighten($green-200,30%)
+	.overview
+		flex: 0 1 30%
+		padding: 0 25px
+	.air-details
+		
+		flex: 1 0 60%
+		@extend %flex-col
+		align-items: stretch
+
+		.details-row
+			@extend %flex-row
+			flex-wrap: nowrap
+
+			.details_block
+				@extend %flex-col
+				flex: 1
+				background: transparentize($green-200,.7)  url(../../images/viruses.png) no-repeat center center 
+				height: 300px
+				margin: 2px
+				transition: .7s all ease-in
+				overflow: hidden
+
+				&:hover
+					background: $green-300  url(../../images/viruses.png) no-repeat center 300px
+					.pop-up
+						transform: translateY(0)
+
+				h3
+					text-align: center
+					padding-top: 50px
+
+				p
+					align-self: center
+					margin-top: auto
+
+				.pop-up
+					transition: .5s all ease-in-out
+					text-align: center
+					transform: translateY(250px)
+
+			.pollutants
+				background-image: none
+				&:hover
+					background: $green-300
+
+
+			.allergens
+				background-image: url(../../images/allergens.png)
+
+			.airborne
+				background-image: url(../../images/airborne.png)
+
+			.mold
+				background-image: url(../../images/mold.png)
+
+			.viruses
+				background-image: url(../../images/viruses.png)
+
+			.bacteria
+				background-image: url(../../images/bacteria.png)
+
+
+					
+
+				
+					
