@@ -33,16 +33,16 @@ body {
 h1, h2, h3 {
   font-family: "Libre Baskerville"; }
 
-nav, .main-menu, ul, .wait-list {
+.container, nav, .main-menu, ul, .wait-list, .molekule-intro, .molekule-intro .pic, .clean-air .air-statistics, .air-contents, .air-contents .air-details .details-row {
   display: flex;
   flex-flow: row wrap; }
 
-.container {
+.clean-air, .clean-air .air-statistics .row, .air-contents .air-details, .air-contents .air-details .details-row .details_block {
   display: flex;
   flex-flow: column wrap; }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto; }
 
 html {
@@ -69,16 +69,16 @@ body {
 h1, h2, h3 {
   font-family: "Libre Baskerville"; }
 
-nav, .main-menu, ul, .wait-list {
+.container, nav, .main-menu, ul, .wait-list, .molekule-intro, .molekule-intro .pic, .clean-air .air-statistics, .air-contents, .air-contents .air-details .details-row {
   display: flex;
   flex-flow: row wrap; }
 
-.container {
+.clean-air, .clean-air .air-statistics .row, .air-contents .air-details, .air-contents .air-details .details-row .details_block {
   display: flex;
   flex-flow: column wrap; }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto; }
 
 html {
@@ -105,16 +105,16 @@ body {
 h1, h2, h3 {
   font-family: "Libre Baskerville"; }
 
-nav, .main-menu, ul, .wait-list {
+.container, nav, .main-menu, ul, .wait-list, .molekule-intro, .molekule-intro .pic, .clean-air .air-statistics, .air-contents, .air-contents .air-details .details-row {
   display: flex;
   flex-flow: row wrap; }
 
-.container {
+.clean-air, .clean-air .air-statistics .row, .air-contents .air-details, .air-contents .air-details .details-row .details_block {
   display: flex;
   flex-flow: column wrap; }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto; }
 
 .btn-default {
@@ -192,3 +192,104 @@ ul {
 @media all and (max-width: 780px) {
   .wait-list {
     display: none; } }
+
+h1, h2, h3 {
+  margin: 0; }
+
+header {
+  height: 55px; }
+
+.main {
+  top: 50px;
+  width: 100%; }
+  @media all and (max-width: 790px) {
+    .main {
+      background: url(../../images/forest.jpg) no-repeat top center/cover;
+      padding: 200px 0;
+      top: 40px; } }
+  .main video {
+    width: 100%;
+    height: auto; }
+    @media all and (max-width: 790px) {
+      .main video {
+        display: none; } }
+
+.molekule-intro {
+  padding: 50px 15px;
+  background: #D8D6D6;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center; }
+  @media all and (max-width: 830px) {
+    .molekule-intro {
+      flex-flow: column wrap; } }
+  .molekule-intro .meet-molekule {
+    flex: 0 1 30%; }
+  .molekule-intro .pic {
+    flex: 1 1 70%;
+    justify-content: flex-end; }
+
+.clean-air {
+  padding: 250px 20px;
+  background: url(../../images/girl-3840.jpg) no-repeat top center/cover;
+  align-items: flex-start;
+  justify-content: flex-start; }
+  .clean-air p {
+    max-width: 50rem; }
+  .clean-air h1 {
+    max-width: 80rem; }
+  .clean-air .air-statistics {
+    padding: 20px; }
+    .clean-air .air-statistics .row {
+      align-items: center;
+      color: #fff; }
+      .clean-air .air-statistics .row p {
+        max-width: 18rem; }
+
+.air-contents {
+  flex-wrap: nowrap;
+  align-items: center;
+  background: white; }
+  .air-contents .overview {
+    flex: 0 1 30%;
+    padding: 0 25px; }
+  .air-contents .air-details {
+    flex: 1 0 60%;
+    align-items: stretch; }
+    .air-contents .air-details .details-row {
+      flex-wrap: nowrap; }
+      .air-contents .air-details .details-row .details_block {
+        flex: 1;
+        background: rgba(207, 233, 219, 0.3) url(../../images/viruses.png) no-repeat center center;
+        height: 300px;
+        margin: 2px;
+        transition: .7s all ease-in;
+        overflow: hidden; }
+        .air-contents .air-details .details-row .details_block:hover {
+          background: #7befb2 url(../../images/viruses.png) no-repeat center 300px; }
+          .air-contents .air-details .details-row .details_block:hover .pop-up {
+            transform: translateY(0); }
+        .air-contents .air-details .details-row .details_block h3 {
+          text-align: center;
+          padding-top: 50px; }
+        .air-contents .air-details .details-row .details_block p {
+          align-self: center;
+          margin-top: auto; }
+        .air-contents .air-details .details-row .details_block .pop-up {
+          transition: .5s all ease-in-out;
+          text-align: center;
+          transform: translateY(250px); }
+      .air-contents .air-details .details-row .pollutants {
+        background-image: none; }
+        .air-contents .air-details .details-row .pollutants:hover {
+          background: #7befb2; }
+      .air-contents .air-details .details-row .allergens {
+        background-image: url(../../images/allergens.png); }
+      .air-contents .air-details .details-row .airborne {
+        background-image: url(../../images/airborne.png); }
+      .air-contents .air-details .details-row .mold {
+        background-image: url(../../images/mold.png); }
+      .air-contents .air-details .details-row .viruses {
+        background-image: url(../../images/viruses.png); }
+      .air-contents .air-details .details-row .bacteria {
+        background-image: url(../../images/bacteria.png); }
