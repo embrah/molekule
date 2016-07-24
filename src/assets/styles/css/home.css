@@ -33,11 +33,11 @@ body {
 h1, h2, h3 {
   font-family: "Libre Baskerville"; }
 
-.container, nav, .main-menu, ul, .wait-list, .molekule-intro, .molekule-intro .pic, .clean-air .air-statistics, .air-contents, .air-contents .air-details .details-row {
+.container, nav, .main-menu, ul, .wait-list, .molekule-intro, .molekule-intro .pic, .clean-air .air-statistics, .air-contents, .air-contents .air-details .details-row, .science, .testers, .testers .people .tester, .reviews, .sold-out, footer .sign-up form {
   display: flex;
   flex-flow: row wrap; }
 
-.clean-air, .clean-air .air-statistics .row, .air-contents .air-details, .air-contents .air-details .details-row .details_block {
+.clean-air, .clean-air .air-statistics .row, .air-contents .air-details, .air-contents .air-details .details-row .details_block, .testers .people, .reviews .review {
   display: flex;
   flex-flow: column wrap; }
 
@@ -69,11 +69,11 @@ body {
 h1, h2, h3 {
   font-family: "Libre Baskerville"; }
 
-.container, nav, .main-menu, ul, .wait-list, .molekule-intro, .molekule-intro .pic, .clean-air .air-statistics, .air-contents, .air-contents .air-details .details-row {
+.container, nav, .main-menu, ul, .wait-list, .molekule-intro, .molekule-intro .pic, .clean-air .air-statistics, .air-contents, .air-contents .air-details .details-row, .science, .testers, .testers .people .tester, .reviews, .sold-out, footer .sign-up form {
   display: flex;
   flex-flow: row wrap; }
 
-.clean-air, .clean-air .air-statistics .row, .air-contents .air-details, .air-contents .air-details .details-row .details_block {
+.clean-air, .clean-air .air-statistics .row, .air-contents .air-details, .air-contents .air-details .details-row .details_block, .testers .people, .reviews .review {
   display: flex;
   flex-flow: column wrap; }
 
@@ -105,11 +105,11 @@ body {
 h1, h2, h3 {
   font-family: "Libre Baskerville"; }
 
-.container, nav, .main-menu, ul, .wait-list, .molekule-intro, .molekule-intro .pic, .clean-air .air-statistics, .air-contents, .air-contents .air-details .details-row {
+.container, nav, .main-menu, ul, .wait-list, .molekule-intro, .molekule-intro .pic, .clean-air .air-statistics, .air-contents, .air-contents .air-details .details-row, .science, .testers, .testers .people .tester, .reviews, .sold-out, footer .sign-up form {
   display: flex;
   flex-flow: row wrap; }
 
-.clean-air, .clean-air .air-statistics .row, .air-contents .air-details, .air-contents .air-details .details-row .details_block {
+.clean-air, .clean-air .air-statistics .row, .air-contents .air-details, .air-contents .air-details .details-row .details_block, .testers .people, .reviews .review {
   display: flex;
   flex-flow: column wrap; }
 
@@ -186,7 +186,7 @@ ul {
       ul li {
         padding: 5px 0; } }
 
-.wait-list button {
+.wait-list button, .wait-list footer .sign-up form input, footer .sign-up form .wait-list input {
   margin-left: 10px; }
 
 @media all and (max-width: 780px) {
@@ -263,7 +263,7 @@ header {
         background: rgba(207, 233, 219, 0.3) url(../../images/viruses.png) no-repeat center center;
         height: 300px;
         margin: 2px;
-        transition: .7s all ease-in;
+        transition: .5s all ease-in;
         overflow: hidden; }
         .air-contents .air-details .details-row .details_block:hover {
           background: #7befb2 url(../../images/viruses.png) no-repeat center 300px; }
@@ -293,3 +293,103 @@ header {
         background-image: url(../../images/viruses.png); }
       .air-contents .air-details .details-row .bacteria {
         background-image: url(../../images/bacteria.png); }
+
+.science {
+  padding: 50px 0;
+  background: #D8D6D6;
+  max-height: 400px; }
+  .science .science-info {
+    padding: 50px 25px;
+    flex: 1;
+    overflow-y: scroll; }
+    .science .science-info p {
+      max-width: 60rem; }
+    .science .science-info::-webkit-scrollbar {
+      display: none; }
+    .science .science-info .intro {
+      margin-bottom: 500px; }
+  .science .demo {
+    flex: 1;
+    background: url(../../images/s6-after.png) no-repeat center center/cover; }
+
+.testers {
+  padding: 20px 15px;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between; }
+  .testers .people {
+    flex-wrap: nowrap; }
+    .testers .people .tester {
+      flex-flow: row nowrap;
+      align-items: center;
+      transition: .4s all ease-in;
+      opacity: .6; }
+      .testers .people .tester:hover {
+        opacity: 1; }
+        .testers .people .tester:hover span:after {
+          opacity: 1; }
+        .testers .people .tester:hover p {
+          transform: translateY(0);
+          opacity: 1; }
+      .testers .people .tester span {
+        background: #C4C2C3;
+        height: 149px;
+        width: 174px;
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        padding-top: 20px;
+        overflow: hidden; }
+        .testers .people .tester span:after {
+          content: "Judi McShane";
+          display: block;
+          position: absolute;
+          bottom: 10px;
+          left: 30px;
+          transition: .4s all ease-in;
+          opacity: 0; }
+      .testers .people .tester p {
+        max-width: 40%;
+        padding: 0 15px;
+        text-align: center;
+        transition: .4s all ease-in;
+        transform: translateY(50px);
+        opacity: 0; }
+
+.reviews {
+  padding: 50px 25px;
+  background: #C4C2C3; }
+  .reviews .review {
+    flex: 1;
+    align-items: center; }
+    .reviews .review p {
+      text-align: center; }
+
+.sold-out {
+  align-items: center;
+  padding: 50px 0 0 25px; }
+  .sold-out .sold {
+    flex: 1 0 80%; }
+  .sold-out .mole-pic {
+    flex: 0 1 20%; }
+    .sold-out .mole-pic img {
+      width: 100%; }
+
+footer {
+  background: #535454;
+  color: #fff;
+  padding: 50px 25px; }
+  footer .sign-up form {
+    margin: 10px 0; }
+    footer .sign-up form button, footer .sign-up form input {
+      background: transparent;
+      text-transform: uppercase;
+      color: #fff;
+      border: 1px solid #fff;
+      padding: 10px 5px;
+      font-size: 1.6rem; }
+    footer .sign-up form input {
+      text-transform: none;
+      border-right: none; }
+  footer p {
+    margin: 0; }

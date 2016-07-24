@@ -96,7 +96,7 @@ header
         background: transparentize($green-200,.7)  url(../../images/viruses.png) no-repeat center center 
         height: 300px
         margin: 2px
-        transition: .7s all ease-in
+        transition: .5s all ease-in
         overflow: hidden
 
         &:hover
@@ -137,6 +137,143 @@ header
 
       .bacteria
         background-image: url(../../images/bacteria.png)
+
+.science
+  padding: 50px 0
+  background: $grey-200
+  max-height: 400px
+  @extend %flex-row
+  .science-info
+    padding: 50px 25px
+    flex: 1
+    overflow-y: scroll
+
+    p
+      max-width: 60rem
+
+    &::-webkit-scrollbar
+      display: none
+    
+    .intro
+      margin-bottom: 500px
+
+  .demo
+    flex: 1
+    background: url(../../images/s6-after.png) no-repeat center center / cover
+
+.testers
+  padding: 20px 15px
+  @extend %flex-row
+  flex-flow: row nowrap
+  align-items: center
+  justify-content: space-between
+
+
+  .test-intro
+    
+
+  .people
+    @extend %flex-col
+    flex-wrap: nowrap
+
+    .tester
+      @extend %flex-row
+      flex-flow: row nowrap
+      align-items: center
+      transition: .4s all ease-in
+      opacity: .6
+
+      &:hover
+        opacity: 1
+
+        span:after
+          opacity: 1
+
+        p
+          transform: translateY(0)
+          opacity: 1
+
+
+      span
+        background: $grey-300
+        height: 149px
+        width: 174px
+        display: inline-block
+        text-align: center
+        position: relative
+        padding-top: 20px
+        overflow: hidden
+
+
+        &:after
+          content: "Judi McShane"
+          display: block
+          position: absolute
+          bottom: 10px
+          left: 30px
+          transition: .4s all ease-in
+          opacity: 0
+
+
+
+      p
+        max-width: 40%
+        padding: 0 15px
+        text-align: center
+        transition: .4s all ease-in
+        transform: translateY(50px)
+        opacity: 0
+
+.reviews
+  padding: 50px 25px
+  @extend %flex-row
+  background: $grey-300
+
+  .review
+    @extend %flex-col
+    flex: 1
+    align-items: center
+
+    p
+      text-align: center
+
+.sold-out
+  @extend %flex-row
+  align-items: center
+  padding: 50px 0 0 25px
+  .sold
+    flex: 1 0 80%
+  .mole-pic
+    flex: 0 1 20%
+    img
+      width: 100%
+
+footer
+  background: $grey-400
+  color: #fff
+  padding: 50px 25px
+
+  .sign-up
+    form
+      @extend %flex-row
+      margin: 10px 0
+      button
+        background: transparent
+        text-transform: uppercase
+        color: #fff
+        border: 1px solid #fff
+        padding: 10px 5px
+        font-size: 1.6rem
+      input
+        @extend button
+        text-transform: none
+        border-right: none
+
+  p
+    margin: 0
+    
+
+
 
 
           
