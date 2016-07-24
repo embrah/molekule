@@ -223,6 +223,12 @@ header {
   @media all and (max-width: 830px) {
     .molekule-intro {
       flex-flow: column wrap; } }
+  @media all and (min-width: 330px) {
+    .molekule-intro h3 {
+      font-size: 2.2rem; }
+    .molekule-intro img {
+      width: 50%;
+      align-self: center; } }
   .molekule-intro .meet-molekule {
     flex: 0 1 30%; }
   .molekule-intro .pic {
@@ -234,12 +240,25 @@ header {
   background: url(../../images/girl-3840.jpg) no-repeat top center/cover;
   align-items: flex-start;
   justify-content: flex-start; }
+  @media all and (min-width: 330px) {
+    .clean-air {
+      padding: 50px 15px; }
+      .clean-air h1 {
+        font-size: 2.5rem;
+        text-align: center; }
+      .clean-air p {
+        text-align: center; } }
   .clean-air p {
     max-width: 50rem; }
   .clean-air h1 {
     max-width: 80rem; }
   .clean-air .air-statistics {
     padding: 20px; }
+    @media all and (min-width: 330px) {
+      .clean-air .air-statistics {
+        justify-content: center; }
+        .clean-air .air-statistics p {
+          text-align: center; } }
     .clean-air .air-statistics .row {
       align-items: center;
       color: #fff; }
@@ -250,14 +269,24 @@ header {
   flex-wrap: nowrap;
   align-items: center;
   background: white; }
+  @media all and (min-width: 330px) {
+    .air-contents {
+      flex-flow: column wrap; } }
   .air-contents .overview {
     flex: 0 1 30%;
     padding: 0 25px; }
+    @media all and (min-width: 330px) {
+      .air-contents .overview {
+        padding: 20px 10px;
+        text-align: center; } }
   .air-contents .air-details {
     flex: 1 0 60%;
     align-items: stretch; }
     .air-contents .air-details .details-row {
       flex-wrap: nowrap; }
+      @media all and (max-width: 330px) {
+        .air-contents .air-details .details-row {
+          flex-flow: column wrap; } }
       .air-contents .air-details .details-row .details_block {
         flex: 1;
         background: rgba(207, 233, 219, 0.3) url(../../images/viruses.png) no-repeat center center;
